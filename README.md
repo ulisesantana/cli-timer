@@ -1,7 +1,7 @@
 cli-timer
 =========
 
-Run a timer from your shell.
+Run a timer from your shell. node-notifier is a peer dependency.
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 [![Version](https://img.shields.io/npm/v/cli-timer.svg)](https://npmjs.org/package/cli-timer)
@@ -15,7 +15,7 @@ Run a timer from your shell.
 # Usage
 <!-- usage -->
 ```sh-session
-$ npm install -g @ulisesantana/cli-timer
+$ npm install -g @ulisesantana/cli-timer node-notifier
 $ timmy COMMAND
 running command...
 $ timmy (-v|--version|version)
@@ -33,7 +33,7 @@ USAGE
 
 ## `timmy add`
 
-describe the command here
+Add timer for being shown as notification once time out.
 
 ```
 USAGE
