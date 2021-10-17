@@ -15,11 +15,11 @@ Run a timer from your shell. node-notifier is a peer dependency.
 # Usage
 <!-- usage -->
 ```sh-session
-$ npm install -g @ulisesantana/cli-timer node-notifier
+$ npm install -g @ulisesantana/cli-timer
 $ timmy COMMAND
 running command...
 $ timmy (-v|--version|version)
-@ulisesantana/cli-timer/0.2.0 linux-x64 node-v14.16.0
+@ulisesantana/cli-timer/0.2.1 linux-x64 node-v14.16.0
 $ timmy --help [COMMAND]
 USAGE
   $ timmy COMMAND
@@ -33,7 +33,7 @@ USAGE
 
 ## `timmy add`
 
-Add timer for being shown as notification once time out.
+describe the command here
 
 ```
 USAGE
@@ -50,7 +50,7 @@ EXAMPLE
   Added timer for 1 minute.
 ```
 
-_See code: [src/commands/add.ts](https://github.com/ulisesantana/cli-timer/blob/v0.2.0/src/commands/add.ts)_
+_See code: [src/commands/add.ts](https://github.com/ulisesantana/cli-timer/blob/v0.2.1/src/commands/add.ts)_
 
 ## `timmy help [COMMAND]`
 
