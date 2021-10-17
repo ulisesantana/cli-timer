@@ -1,10 +1,10 @@
 {
-  "name": "cli-timer",
+  "name": "@ulisesantana/cli-timer",
   "description": "Run a timer from your shell.",
   "version": "0.1.0",
   "author": "Ulises Santana @ulisesantana",
   "bin": {
-    "cli-timer": "./bin/run"
+    "timmy": "./bin/run"
   },
   "bugs": "https://github.com/ulisesantana/cli-timer/issues",
   "dependencies": {
@@ -14,6 +14,14 @@
     "daemon": "^1.1.0",
     "node-notifier": "^10.0.0",
     "tslib": "^1.14.1"
+  },
+  "peerDependencies": {
+    "node-notifier": "^10.0.0"
+  },
+  "peerDependenciesMeta": {
+    "node-notifier": {
+      "optional": false
+    }
   },
   "devDependencies": {
     "@oclif/dev-cli": "^1.26.0",
@@ -41,13 +49,17 @@
   ],
   "homepage": "https://github.com/ulisesantana/cli-timer",
   "keywords": [
-    "oclif"
+    "oclif",
+    "cli",
+    "timer",
+    "background timer",
+    "notification"
   ],
   "license": "MIT",
   "main": "lib/index.js",
   "oclif": {
     "commands": "./lib/commands",
-    "bin": "cli-timer",
+    "bin": "timmy",
     "plugins": [
       "@oclif/plugin-help"
     ]
@@ -58,6 +70,7 @@
     "postpack": "rm -f oclif.manifest.json",
     "posttest": "eslint . --ext .ts --config .eslintrc",
     "prepack": "rm -rf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
+    "tag": "TAG=v$(node -pe \"require('./package.json').version\"); git commit -am \"🔖 $TAG\" && git tag $TAG && git push --tags",
     "test": "jest",
     "version": "oclif-dev readme && git add README.md"
   },

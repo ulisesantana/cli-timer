@@ -15,49 +15,50 @@ Run a timer from your shell.
 # Usage
 <!-- usage -->
 ```sh-session
-$ npm install -g cli-timer
-$ cli-timer COMMAND
+$ npm install -g @ulisesantana/cli-timer
+$ timmy COMMAND
 running command...
-$ cli-timer (-v|--version|version)
-cli-timer/0.1.0 linux-x64 node-v14.16.0
-$ cli-timer --help [COMMAND]
+$ timmy (-v|--version|version)
+@ulisesantana/cli-timer/0.1.0 linux-x64 node-v14.16.0
+$ timmy --help [COMMAND]
 USAGE
-  $ cli-timer COMMAND
+  $ timmy COMMAND
 ...
 ```
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`cli-timer hello [FILE]`](#cli-timer-hello-file)
-* [`cli-timer help [COMMAND]`](#cli-timer-help-command)
+* [`timmy add [FILE]`](#timmy-add-file)
+* [`timmy help [COMMAND]`](#timmy-help-command)
 
-## `cli-timer hello [FILE]`
+## `timmy add [FILE]`
 
 describe the command here
 
 ```
 USAGE
-  $ cli-timer hello [FILE]
+  $ timmy add [FILE]
 
 OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
+  -d, --description=description  Timer description.
+  -h, --help                     show CLI help
+  -m, --minutes=minutes          [default: 1] Time for timer in minutes.
+  -s, --seconds=seconds          Time for timer in seconds.
 
 EXAMPLE
-  $ cli-timer hello
-  hello world from ./src/hello.ts!
+  $ cli-timer add
+  Added timer for 1 minute.
 ```
 
-_See code: [src/commands/hello.ts](https://github.com/ulisesantana/cli-timer/blob/v0.1.0/src/commands/hello.ts)_
+_See code: [src/commands/add.ts](https://github.com/ulisesantana/cli-timer/blob/v0.1.0/src/commands/add.ts)_
 
-## `cli-timer help [COMMAND]`
+## `timmy help [COMMAND]`
 
-display help for cli-timer
+display help for timmy
 
 ```
 USAGE
-  $ cli-timer help [COMMAND]
+  $ timmy help [COMMAND]
 
 ARGUMENTS
   COMMAND  command to show help for

@@ -1,18 +1,22 @@
-import {ChildProcess, spawn, exec, SpawnOptions} from 'child_process'
+import {exec, spawn, SpawnOptions} from 'child_process'
 
 export class Daemon {
-  static runCallback(callback: Function): void {
-    exec(`node -e "(${callback.toString()})()"`).unref()
+  runCallback(callback: Function, ...params: any[]): void {
+    exec(`node -e "(${callback.toString()})(${Daemon.prepareCallbackParams(params)})"`).unref()
     process.exit()
   }
 
-  static runScript(processOptions: Partial<NodeJS.Process> = {}): void {
+  runScript(processOptions: Partial<NodeJS.Process> = {}): void {
     if (process.env.__daemon) {
       return
     }
     const [_node, script, ...args]: string[] = [...process.argv]
     spawn(process.execPath, [script].concat(args), Daemon.prepareSpawnOptions(processOptions)).unref()
     process.exit()
+  }
+
+  private static prepareCallbackParams(params: any[]): string {
+    return params.map(x => typeof x === 'string' ? `'${x}'` : x).join(',')
   }
 
   private static prepareSpawnOptions(options: Partial<NodeJS.Process>): SpawnOptions {
