@@ -1,16 +1,18 @@
 cli-timer
 =========
 
+[![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
+[![Version](https://img.shields.io/npm/v/cli-timer.svg)](https://npmjs.org/package/cli-timer)
+[![Downloads/week](https://img.shields.io/npm/dw/cli-timer.svg)](https://npmjs.org/package/cli-timer)
+[![License](https://img.shields.io/npm/l/cli-timer.svg)](https://github.com/ulisesantana/cli-timer/blob/master/package.json)
+
 Run a timer from your shell. node-notifier is a peer dependency which must be installed with --cli option.
 
 ```shell
 npm i --cli node-notifier
 ```
 
-[![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
-[![Version](https://img.shields.io/npm/v/cli-timer.svg)](https://npmjs.org/package/cli-timer)
-[![Downloads/week](https://img.shields.io/npm/dw/cli-timer.svg)](https://npmjs.org/package/cli-timer)
-[![License](https://img.shields.io/npm/l/cli-timer.svg)](https://github.com/ulisesantana/cli-timer/blob/master/package.json)
+![Timmy basic example](docs/example-timmy.gif)
 
 <!-- toc -->
 * [Usage](#usage)
@@ -23,7 +25,7 @@ $ npm install -g @ulisesantana/cli-timer
 $ timmy COMMAND
 running command...
 $ timmy (-v|--version|version)
-@ulisesantana/cli-timer/0.2.1 linux-x64 node-v14.16.0
+@ulisesantana/cli-timer/0.2.2 linux-x64 node-v14.16.0
 $ timmy --help [COMMAND]
 USAGE
   $ timmy COMMAND
@@ -54,7 +56,7 @@ EXAMPLE
   Added timer for 1 minute.
 ```
 
-_See code: [src/commands/add.ts](https://github.com/ulisesantana/cli-timer/blob/v0.2.1/src/commands/add.ts)_
+_See code: [src/commands/add.ts](https://github.com/ulisesantana/cli-timer/blob/v0.2.2/src/commands/add.ts)_
 
 ## `timmy help [COMMAND]`
 
