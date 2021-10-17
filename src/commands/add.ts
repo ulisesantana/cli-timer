@@ -40,7 +40,11 @@ Added timer for 1 minute.
     const timeout = Add.fromMinutesToMilliseconds(minutes)
     const message = description || `Time out for ${minutes} minutes.`
     const [cb, ...params] = this.generateNotificationCallback(timeout, message)
-    this.log(`Added timer for ${minutes} minutes.`)
+    if (description) {
+      this.log(`Added timer "${description}" for ${minutes} minutes.`)
+    } else {
+      this.log(`Added timer for ${minutes} minutes.`)
+    }
     new Daemon().runCallback(cb, ...params)
   }
 
@@ -48,7 +52,11 @@ Added timer for 1 minute.
     const timeout = Add.fromSecondsToMilliseconds(seconds)
     const message = description || `Time out for ${seconds} seconds.`
     const [cb, ...params] = this.generateNotificationCallback(timeout, message)
-    this.log(`Added timer for ${seconds} seconds.`)
+    if (description) {
+      this.log(`Added timer "${description}" for ${seconds} seconds.`)
+    } else {
+      this.log(`Added timer for ${seconds} seconds.`)
+    }
     new Daemon().runCallback(cb, ...params)
   }
 
