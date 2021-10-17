@@ -16,7 +16,7 @@ export class Daemon {
   }
 
   private static prepareCallbackParams(params: any[]): string {
-    return params.map(x => typeof x === 'string' ? `'${x}'` : x).join(',')
+    return params.map(x => typeof x === 'string' ? `'${x.replace(/'/g, '\\\'')}'` : x).join(',')
   }
 
   private static prepareSpawnOptions(options: Partial<NodeJS.Process>): SpawnOptions {

@@ -1,7 +1,7 @@
 {
   "name": "@ulisesantana/cli-timer",
   "description": "Run a timer from your shell.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "Ulises Santana @ulisesantana",
   "bin": {
     "timmy": "./bin/run"
@@ -14,14 +14,6 @@
     "daemon": "^1.1.0",
     "node-notifier": "^10.0.0",
     "tslib": "^1.14.1"
-  },
-  "peerDependencies": {
-    "node-notifier": "^10.0.0"
-  },
-  "peerDependenciesMeta": {
-    "node-notifier": {
-      "optional": false
-    }
   },
   "devDependencies": {
     "@oclif/dev-cli": "^1.26.0",
