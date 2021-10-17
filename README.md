@@ -19,7 +19,7 @@ $ npm install -g @ulisesantana/cli-timer
 $ timmy COMMAND
 running command...
 $ timmy (-v|--version|version)
-@ulisesantana/cli-timer/0.1.2 linux-x64 node-v14.16.0
+@ulisesantana/cli-timer/0.2.0 linux-x64 node-v14.16.0
 $ timmy --help [COMMAND]
 USAGE
   $ timmy COMMAND
@@ -50,7 +50,7 @@ EXAMPLE
   Added timer for 1 minute.
 ```
 
-_See code: [src/commands/add.ts](https://github.com/ulisesantana/cli-timer/blob/v0.1.2/src/commands/add.ts)_
+_See code: [src/commands/add.ts](https://github.com/ulisesantana/cli-timer/blob/v0.2.0/src/commands/add.ts)_
 
 ## `timmy help [COMMAND]`
 
