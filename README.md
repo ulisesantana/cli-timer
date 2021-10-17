@@ -1,7 +1,11 @@
 cli-timer
 =========
 
-Run a timer from your shell. node-notifier is a peer dependency.
+Run a timer from your shell. node-notifier is a peer dependency which must be installed with --cli option.
+
+```shell
+npm i --cli node-notifier
+```
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 [![Version](https://img.shields.io/npm/v/cli-timer.svg)](https://npmjs.org/package/cli-timer)
