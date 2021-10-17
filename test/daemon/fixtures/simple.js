@@ -3,7 +3,7 @@ const {Daemon} = require('../../../lib/daemon.js')
 
 const port = process.argv[2]
 
-Daemon.start({
+Daemon.runScript({
   stdout: process.stdout,
   stderr: process.stderr,
 })
