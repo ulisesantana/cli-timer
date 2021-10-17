@@ -19,7 +19,7 @@ $ npm install -g @ulisesantana/cli-timer
 $ timmy COMMAND
 running command...
 $ timmy (-v|--version|version)
-@ulisesantana/cli-timer/0.1.0 linux-x64 node-v14.16.0
+@ulisesantana/cli-timer/0.1.1 linux-x64 node-v14.16.0
 $ timmy --help [COMMAND]
 USAGE
   $ timmy COMMAND
@@ -28,16 +28,16 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`timmy add [FILE]`](#timmy-add-file)
+* [`timmy add`](#timmy-add)
 * [`timmy help [COMMAND]`](#timmy-help-command)
 
-## `timmy add [FILE]`
+## `timmy add`
 
 describe the command here
 
 ```
 USAGE
-  $ timmy add [FILE]
+  $ timmy add
 
 OPTIONS
   -d, --description=description  Timer description.
@@ -46,11 +46,11 @@ OPTIONS
   -s, --seconds=seconds          Time for timer in seconds.
 
 EXAMPLE
-  $ cli-timer add
+  $ timmy add
   Added timer for 1 minute.
 ```
 
-_See code: [src/commands/add.ts](https://github.com/ulisesantana/cli-timer/blob/v0.1.0/src/commands/add.ts)_
+_See code: [src/commands/add.ts](https://github.com/ulisesantana/cli-timer/blob/v0.1.1/src/commands/add.ts)_
 
 ## `timmy help [COMMAND]`
 
